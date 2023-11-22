@@ -9,7 +9,7 @@ export const registerSchema = z.object({
             required_error: "Email is required",
         })
         .email({
-            message: "Invalid email",
+            message: "Email is invalid",
         }),
     password: z
         .string({
@@ -26,7 +26,7 @@ export const loginSchema = z.object({
             required_error: "Email is required",
         })
         .email({
-            message: "Invalid email",
+            message: "Email is invalid",
         }),
     password: z.string({
         required_error: "Password is required",
